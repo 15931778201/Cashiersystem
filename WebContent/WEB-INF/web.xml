@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+  	<servlet-name>AddorderServlet</servlet-name>
+  	<servlet-class>com.sxdx.servlet.AddorderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.sxdx.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodInfoServlet</servlet-name>
+    <servlet-class>com.sxdx.servlet.FoodInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCarServlet</servlet-name>
+    <servlet-class>com.sxdx.servlet.AddCarServlet</servlet-class>
+  </servlet><servlet>
+  	<servlet-name>ZhuceServlet</servlet-name>
+  	<servlet-class>com.sxdx.servlet.ZhuceServlet</servlet-class>
+  </servlet>
+	<servlet>
+		<servlet-name>ShowServlet</servlet-name>
+		<servlet-class>com.sxdx.servlet.ShowServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>confirmServlet</servlet-name>
+		<servlet-class>com.sxdx.servlet.confirmServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>orderServlet</servlet-name>
+		<servlet-class>com.sxdx.servlet.orderServlet</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>refuseServlet</servlet-name><servlet-class>com.sxdx.servlet.refuseServlet</servlet-class>
+	</servlet>
+
+
+
+	<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodInfoServlet</servlet-name>
+    <url-pattern>/foodinfoservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCarServlet</servlet-name>
+    <url-pattern>/addcarservlet</url-pattern>
+  </servlet-mapping><servlet-mapping>
+  	<servlet-name>ZhuceServlet</servlet-name>
+  	<url-pattern>/ZhuceServlet</url-pattern>
+  </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddorderServlet</servlet-name>
+		<url-pattern>/AddorderServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowServlet</servlet-name>
+		<url-pattern>/ShowServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>confirmServlet</servlet-name>
+		<url-pattern>/confirmServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>refuseServlet</servlet-name>
+		<url-pattern>/refuseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>orderServlet</servlet-name>
+		<url-pattern>/orderServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
